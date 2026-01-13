@@ -46,18 +46,15 @@ python test_contacts.py
 
 ## Data Structure 
 ```
-python contacts =
-{
-"John Doe":
-{
+contacts ={
+"John Doe":{
 "phone": "+1234567890",
 "email": "john@example.com",
 "address": "123 Main St",
 "group": "Friends"
 },
 
-"Jane Smith":
-{
+"Jane Smith":{
 "phone": "+0987654321",
 "email": "jane@example.com",
 "address": "456 Oak Ave",
