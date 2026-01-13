@@ -1,0 +1,18 @@
+{
+    "Sample Contact": {
+        "phone": "1234567890",
+        "email": "sample@example.com",
+        "address": "123 Python Way",
+        "group": "Work",
+        "created_at": "2026-01-13T15:00:00",
+        "updated_at": "2026-01-13T15:00:00"
+    },
+    "Jack": {
+        "phone": "8765434578",
+        "email": null,
+        "address": null,
+        "group": "Other",
+        "created_at": "2026-01-13T15:36:32.086589",
+        "updated_at": "2026-01-13T15:36:32.086634"
+    }
+}
