@@ -40,6 +40,9 @@ Thank you for using the program!
 ## Challenges & Solutions
 
 **Challenge**: User might enter empty input
+
 **Solution**: Added basic check with if statement
+
 **Challenge**: Formatting the output nicely
+
 **Solution**: Used f-strings with proper spacing
