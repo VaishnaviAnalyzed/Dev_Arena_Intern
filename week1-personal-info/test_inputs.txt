@@ -1,0 +1,23 @@
+---
+
+## `test_inputs.txt`
+This file is used to document what data you used to test the program's logic. Copy and paste this into your `test_inputs.txt` file.
+
+```text
+TEST CASE 1: Standard Input
+Food:Momo,Panipuri
+Color:Red,Pink
+Expected Result: Program prints summary with 264 months.
+
+TEST CASE 2: Empty Input Validation
+Food: [Enter] (Leave blank)
+System Response: "Please enter a valid food!"
+Food: Tacos
+Color: Green
+Expected Result: Program waits for input before proceeding.
+
+TEST CASE 3: Long String Input
+Food: Homemade Lasagna with extra cheese
+Color: Bright Neon Purple
+Expected Result: Program handles long strings without crashing.
+
