@@ -1,0 +1,18 @@
+---
+
+## 2. `test_students.txt`
+This file helps you (or a grader) quickly test the program with specific scenarios.
+
+```text
+SCENARIO 1: High Achievers
+- Name: Alice / Marks: 95, 98, 92 (Result: A)
+- Name: Bob / Marks: 85, 82, 88 (Result: B)
+
+SCENARIO 2: Input Error Handling
+- Input "Five" for number of students (Should show "Invalid input!")
+- Input 150 for Math marks (Should show "Please enter a number between 0 and 100")
+- Input [Empty Name] (Should show "Name cannot be empty!")
+
+SCENARIO 3: Failing/Borderline
+- Name: Charlie / Marks: 50, 40, 30 (Result: F)
+- Name: Dave / Marks: 60, 60, 60 (Result: D)

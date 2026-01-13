@@ -1,0 +1,16 @@
+==================================================
+            RESULTS SUMMARY
+==================================================
+Name                 |   Avg | Grade | Comment
+------------------------------------------------------------
+Alice Johnson        |  95.0 |   A   | Excellent! Keep up the great work!
+Bob Smith            |  85.0 |   B   | Very Good! You're doing well.
+Charlie Brown        |  40.0 |   F   | Failed. Please seek help from teacher.
+
+==================================================
+          CLASS STATISTICS
+==================================================
+Total Students: 3
+Class Average: 73.3
+Highest Average: 95.0 (Alice Johnson)
+Lowest Average: 40.0 (Charlie Brown)
