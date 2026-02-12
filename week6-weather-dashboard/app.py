@@ -102,7 +102,7 @@ def display_dashboard(current: Dict, forecast: Dict):
         if len(seen_days) >= 5: break
 
 def main():
-    API_KEY = "a2399377ae1087221548b7e577d99111"  # <--- Replace this
+    API_KEY = "YOUR API KEY"  # <--- Replace this
     api = WeatherAPI(API_KEY)
     current_city = "London"
 
