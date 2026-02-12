@@ -5,7 +5,7 @@ A comprehensive weather application that fetches real-time weather data from ext
 ## What I Learned 
 1. **API Integration**: How to work with external web services
 2. **HTTP Requests**: Making GET requests and handling responses
-3. **JSON Processing**: Parsing and working with complex JSON data.
+3. **JSON Processing**: Parsing and working with complex JSON data. 
 4. **Error Handling**: Managing network errors and API limitations
 5. **Environment Management**: Using environment variables for configuration
 6. **Package Management**: Installing and using external libraries
