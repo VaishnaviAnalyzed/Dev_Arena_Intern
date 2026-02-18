@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block content %}
+    <article class="content-section">
+        <h1 class="post-title">{{ post.title }}</h1>
+        <div class="metadata mb-3">
+            <span class="badge bg-secondary">Author: {{ post.author.username }}</span>
+            <small class="text-muted">{{ post.date_posted.strftime('%B %d, %Y') }}</small>
+        </div>
+        <p class="article-content" style="white-space: pre-wrap;">{{ post.content }}</p>
+        
+        <hr>
+        
+        {% if post.author == current_user %}
+        <div>
+            <a class="btn btn-secondary btn-sm mt-1 mb-1" href="{{ url_for('update_post', post_id=post.id) }}">Update</a>
+            <button type="button" class="btn btn-danger btn-sm m-1" data-bs-toggle="modal" data-bs-target="#deleteModal">Delete</button>
+        </div>
+        {% endif %}
+    </article>
+{% endblock content %}
+
+<hr>
+<h3>Comments ({{ post.comments|length }})</h3>
+
+{% if current_user.is_authenticated %}
+    <form method="POST" action="">
+        {{ form.hidden_tag() }}
+        <div class="input-group mb-3">
+            {{ form.body(class="form-control", placeholder="Write a comment...") }}
+            {{ form.submit(class="btn btn-primary") }}
+        </div>
+    </form>
+{% else %}
+    <p><a href="{{ url_for('login') }}">Log in</a> to join the conversation.</p>
+{% endif %}
+
+{% for comment in post.comments %}
+    <div class="card mb-2 bg-light">
+        <div class="card-body p-2">
+            <p class="mb-1">{{ comment.body }}</p>
+            <footer class="blockquote-footer">
+                {{ comment.author.username }} on <cite title="Source Title">{{ comment.timestamp.strftime('%Y-%m-%d') }}</cite>
+            </footer>
+        </div>
+    </div>
+{% endfor %}

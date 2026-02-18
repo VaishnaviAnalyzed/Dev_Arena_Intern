@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="content-section text-center py-5">
+        <h1 class="display-1 fw-bold">404</h1>
+        <p class="lead">Oops! The page you're looking for has wandered off into the woods.</p>
+        <a href="{{ url_for('home') }}" class="btn btn-primary">Return to Homepage</a>
+    </div>
+{% endblock content %}

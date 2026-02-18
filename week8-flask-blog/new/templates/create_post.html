@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8 card shadow-sm p-4 mt-4">
+        <h2 class="mb-4">{{ legend }}</h2>
+        <form method="POST">
+            {{ form.hidden_tag() }}
+            <div class="mb-3">
+                {{ form.title.label(class="form-label fw-bold") }}
+                {{ form.title(class="form-control") }}
+            </div>
+            <div class="mb-3">
+                {{ form.content.label(class="form-label fw-bold") }}
+                {{ form.content(class="form-control", id="editor") }}
+            </div>
+            {{ form.submit(class="btn btn-success px-4") }}
+        </form>
+    </div>
+</div>
+
+<script src="https://cdn.ckeditor.com/ckeditor5/36.0.1/classic/ckeditor.js"></script>
+<script>
+    ClassicEditor.create(document.querySelector('#editor')).catch(error => { console.error(error); });
+</script>
+{% endblock content %}
